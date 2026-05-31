@@ -1,25 +1,25 @@
 class Apogee < Formula
   desc "Cross-shell config emitter for Orbit (aliases, PATH, env) via a single eval."
   homepage "https://github.com/orbyts/apogee"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/orbyts/apogee/releases/download/v0.1.2/apogee-aarch64-apple-darwin.tar.xz"
-      sha256 "1478d8dafdb32e44871b80ee086c1d5f9be547eb5bdf0f23ea620174ce22c911"
+      url "https://github.com/orbyts/apogee/releases/download/v0.1.3/apogee-aarch64-apple-darwin.tar.xz"
+      sha256 "1a4c0096f77ebf49d2425f7a3a90e3440739f82b34f28095d8b395790a7fd8cc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orbyts/apogee/releases/download/v0.1.2/apogee-x86_64-apple-darwin.tar.xz"
-      sha256 "4a1bb8f31b271f4745eafee83177bd0ce8fc048c85bf71969dc4d215b92563d8"
+      url "https://github.com/orbyts/apogee/releases/download/v0.1.3/apogee-x86_64-apple-darwin.tar.xz"
+      sha256 "d1826093e177077038cb1c2ac04b591cb4e32bd99f59d6e295121772dda5a6a7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/orbyts/apogee/releases/download/v0.1.2/apogee-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4a699f20140bfc01bd222013e5c9c30cae03a212d9da0a00da38db22f987387a"
+      url "https://github.com/orbyts/apogee/releases/download/v0.1.3/apogee-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "81c0d52ce5f88e96a06cb5eed72207837aad7eca6896cf726e21bf23eaddfaca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orbyts/apogee/releases/download/v0.1.2/apogee-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0ff764d4844b57924c5ac952cf07553c21fde9faa97dcf8910069d27c30fb2b4"
+      url "https://github.com/orbyts/apogee/releases/download/v0.1.3/apogee-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "82a64416866e7dccb201cb71ddaa1be0b1ae42b6b3157e25d7626ece8e5a5dc0"
     end
   end
   license "MIT"
